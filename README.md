@@ -172,9 +172,6 @@ To get everything working together:
 
 2. Open your web browser and go to `http://localhost:4200` to start using the Task Management Application.
 
-## Screenshots
-
-If you want to include screenshots of the application, this is the place to do it!
 
 ## Need Help?
 
