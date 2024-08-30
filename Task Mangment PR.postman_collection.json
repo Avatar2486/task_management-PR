@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "8a3b2f0f-16a3-4933-83c0-171d8f5b1128",
+		"name": "Task Mangment PR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25908566"
+	},
+	"item": [
+		{
+			"name": "Get All Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:3000/api/tasks\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Single Task by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/tasks/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks",
+						"1"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:3000/api/tasks/1\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Create a New Task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\": \"New Task\", \"description\": \"This is a new task.\", \"status\": \"To Do\", \"deadline\": \"2024-09-30\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:3000/api/tasks \\\r\n-H \"Content-Type: application/json\" \\\r\n-d '{\"title\": \"New Task\", \"description\": \"This is a new task.\", \"status\": \"To Do\", \"deadline\": \"2024-09-30\"}'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Update an Existing Task",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"title\": \"Updated Task\", \"description\": \"This is an updated task.\", \"status\": \"In Progress\", \"deadline\": \"2024-10-01\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/tasks/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks",
+						"1"
+					]
+				},
+				"description": "Generated from cURL: curl -X PUT http://localhost:3000/api/tasks/1 \\\r\n-H \"Content-Type: application/json\" \\\r\n-d '{\"title\": \"Updated Task\", \"description\": \"This is an updated task.\", \"status\": \"In Progress\", \"deadline\": \"2024-10-01\"}'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/tasks/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tasks",
+						"1"
+					]
+				},
+				"description": "Generated from cURL: curl -X DELETE http://localhost:3000/api/tasks/1\r\n"
+			},
+			"response": []
+		}
+	]
+}
